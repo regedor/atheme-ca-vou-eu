@@ -13,6 +13,44 @@
 @neutral-text-color: #666666;
 @page-color:         #FFFFFF;
 
+div.testimony {
+  padding: 20px 30px 10px 30px;
+  background-color: beige;
+  box-sizing: border-box;
+
+  & div.testimony-header {
+    height: 60px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    background: url('../images/ca-vou-eu.png') no-repeat;
+  }
+
+  & h4 {
+    margin-bottom: 30px;
+  }
+  & blockquote {
+    font-style: italic;   
+  }
+  & blockquote:before, & blockquote:after {
+    content: '"';
+  }
+  & li {
+    margin-bottom: 30px;
+    list-style-type: none;
+    &:nth-of-type(even) {
+      img {
+        float: right;
+        padding: 0 20px;
+      }
+    }
+    &:nth-of-type(odd) {
+      img {
+        float: left;
+        padding: 0 20px;
+      }
+    }
+  }
+}
 
 body {
   font-family: 'Open Sans', helvetica, sans-serif;
@@ -173,7 +211,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 30px;
   h4 {
     //background-color: rgba(0,0,0,0.4);
-    background: url('../images/red-noise.png') repeat;
+    //background: url('../images/red-noise.png') repeat;
+    background-color: #F18200;
     color: @page-color;
     font-size: 14px;
     margin: 0 0 17px 0;
@@ -192,7 +231,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 99px;
   h2 {
     //background-color: rgba(0,0,0,0.4);
-    background: url('../images/red-noise.png') repeat;
+    //background: url('../images/red-noise.png') repeat;
+    background-color: #F18200;
     color: @page-color;
     font-size: 14px;
     font-weight: bold;
